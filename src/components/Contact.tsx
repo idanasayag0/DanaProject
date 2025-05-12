@@ -85,7 +85,6 @@ const Contact: React.FC = () => {
         formData,
         '9kxmUM44lBPYy86Gd'
       );
-      console.log('Email sent:', response);
       return true;
     } catch (error) {
       console.error('Error sending email:', error);
@@ -107,7 +106,6 @@ const Contact: React.FC = () => {
       
       if (emailSent) {
         // Success handling
-        console.log('Form data:', formData);
         setSubmitted(true);
         
         // Reset form
