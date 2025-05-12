@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
   const sendFormDataToEmail = async (data: FormData) => {
     try {
       const formData = {
-        service_id: 'service_dl6hx4q',
+        service_id: 'service_jjpe1va',
         template_id:'template_u8sddpk',
         user_id: '9kxmUM44lBPYy86Gd',
         from_name: data.name,
@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
       }
 
       const response = await emailjs.send(
-        'service_dl6hx4q',
+        'service_jjpe1va',
         'template_u8sddpk',
         formData,
         '9kxmUM44lBPYy86Gd'
