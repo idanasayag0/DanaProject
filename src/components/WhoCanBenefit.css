@@ -1,0 +1,128 @@
+.who-benefits {
+    background-color: var(--light);
+  }
+  
+  .benefits-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .benefits-list {
+    padding: 2rem;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.1rem;
+  }
+  
+  .benefit-item .check-icon {
+    color: var(--primary);
+    font-weight: bold;
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+  }
+  
+  .benefits-images {
+    position: relative;
+  }
+  
+  .benefits-image-main {
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefits-image-secondary {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-30%);
+    z-index: 1;
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefits-image-main img,
+  .benefits-image-secondary img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .benefits-image-main:hover img,
+  .benefits-image-secondary:hover img {
+    transform: scale(1.03);
+  }
+  
+  .benefits-quote {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--primary);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+  }
+  
+  @media (max-width: 992px) {
+    .benefits-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .benefits-images {
+      order: 1;
+      margin-bottom: 2rem;
+    }
+    
+    .benefits-list {
+      order: 2;
+    }
+    
+    .benefits-image-secondary {
+      position: relative;
+      top: -50px;
+      right: 30px;
+      transform: none;
+      width: 60%;
+      margin-bottom: -50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .benefits-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .benefits-quote {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .benefits-image-secondary {
+      top: -30px;
+      right: 20px;
+    }
+  }

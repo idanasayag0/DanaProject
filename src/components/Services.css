@@ -1,0 +1,116 @@
+.services {
+    background-color: var(--secondary);
+  }
+  
+  .service-category {
+    margin-bottom: 4rem;
+  }
+  
+  .service-rehabilitation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .service-rehabilitation-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-rehabilitation-list ul {
+    list-style: none;
+  }
+  
+  .service-rehabilitation-list li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .service-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 3rem 0;
+  }
+  
+  .service-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  .complementary-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .complementary-service {
+    background-color: var(--light);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .complementary-service:hover {
+    transform: translateY(-5px);
+  }
+  
+  .complementary-image {
+    overflow: hidden;
+  }
+  
+  .complementary-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .complementary-service:hover .complementary-image img {
+    transform: scale(1.05);
+  }
+  
+  .complementary-description {
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .complementary-description strong {
+    color: var(--primary);
+    font-weight: 600;
+  }
+  
+  @media (max-width: 992px) {
+    .service-rehabilitation {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .service-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .complementary-services {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .service-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
