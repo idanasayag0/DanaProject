@@ -1,24 +1,6 @@
 import React from 'react';
 import './Services.css';
 
-interface ServiceItemProps {
-  title: string;
-  description: React.ReactNode;
-  imageUrl: string;
-}
-
-const ServiceItem: React.FC<ServiceItemProps> = ({ title, description, imageUrl }) => (
-  <div className="service-item">
-    <div className="service-image">
-      <img src={imageUrl} alt={title} />
-    </div>
-    <div className="service-content">
-      <h3 className="service-title">{title}</h3>
-      <div className="service-description">{description}</div>
-    </div>
-  </div>
-);
-
 const Services: React.FC = () => {
   const rehabilitationItems = [
     "התאמה אישית לכל מתאמן בהתאם למצבו הפיזי",
